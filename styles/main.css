@@ -10,3 +10,22 @@
     --punch: 'Black Ops One', cursive;
   }
 
+body {
+  font-family: var(--regulier);
+  font-size: 20px;
+  color: var(--rouge-fonce);
+}
+.title-1{
+  font-family: var(--punch);
+  font-size: 35px;
+  color: var(--noir);
+}
+.title-2{
+  font-family: var(--punch);
+  font-size:  30px;
+}
+.title-2{
+  font-family: var(--punch);
+  font-size: 25px;
+  color: var(--blue-fonce);
+}
