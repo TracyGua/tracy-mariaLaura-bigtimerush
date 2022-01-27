@@ -1,7 +1,3 @@
-@font-face {
-    font-family: ;
-    src: url(font);
-}
 :root{
     --rouge-pale: #A8343E;
     --rouge-fonce: #660020;
@@ -11,6 +7,6 @@
     --noir: black;
     --blanc: white;
     --regulier:'Dosis', sans-serif;
-    --punch: 'edosz';
+    --punch: 'Black Ops One', cursive;
   }
 
