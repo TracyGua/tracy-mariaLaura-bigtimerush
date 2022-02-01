@@ -1,5 +1,5 @@
 # Big Time Rush
 ## [Optimisation Web](https://smnarnold.com/projets/megazord)
-### Equipe
+### Équipe
 - Tracy Gua: rouge
 - Maria-Laura Coronel: bleu
