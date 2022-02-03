@@ -2,7 +2,7 @@ body{
     box-sizing: border-box;
 }
 .hero{
-    width: 100vw;
+    width: 24%;
     height: 100vh;
   }
   @media(orientation: landscape){
@@ -13,4 +13,10 @@ body{
   .picture-hero{
     width: 100vw;
      height: 100vh;
+  }
+  .img_btr_port{
+    width: 100vw;
+    height:100vh;
+    object-fit: cover;
+    object-position: 0% 15%;
   }
