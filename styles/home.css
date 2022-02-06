@@ -1,22 +1,31 @@
-body{
-    box-sizing: border-box;
+body {
+  box-sizing: border-box;
 }
-.hero{
-    width: 24%;
-    height: 100vh;
+.hero {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+@media (orientation: landscape) {
+  .hero {
+    height: 56.25%;
   }
-  @media(orientation: landscape){
-    .hero{
-      width: 56.25%;
-    }
-  }
-  .picture-hero{
-    width: 100vw;
-     height: 100vh;
-  }
-  .img_btr_port{
-    width: 100vw;
-    height:100vh;
-    object-fit: cover;
-    object-position: 0% 15%;
-  }
+}
+.picture-hero {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.img_btr {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0% 15%;
+}
+.contrast-div {
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+  background-color: red;
+  position: absolute;
+}
