@@ -4,6 +4,7 @@ body {
 .hero {
   width: 100vw;
   height: 100vh;
+  position: absolute;
 }
 @media (orientation: landscape) {
   .hero {
@@ -31,9 +32,13 @@ body {
   top: 0;
 }
 
-.container-fluid,
-.row {
-  height: 100%;
+.container-fluid {
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+  overflow: hidden;
 }
 .savoir-plus {
   border: none;
