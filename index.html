@@ -44,17 +44,30 @@
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/home.css" />
     <script src="scripts/main.js"></script>
-    
   </head>
   <body>
-    <header>
+  
       <section class="hero">
         <picture class="picture-hero">
-          <source srcset="img/btr_landscape.jpg" media="(min-width: 1000px)">
-          <img src="img/btr_portrait.jpg" class="img_btr_port">
+          <source srcset="img/btr_landscape.jpg" media="(orientation: landscape)"/>
+          <img src="img/btr_portrait.jpg" class="img_btr" />
         </picture>
-      </section>
-    </header>
 
+        <div class="contrast-div"></div>
+
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col col-md-6 col-xl-3 mx-auto">
+              <h1>Big Time Rush</h1>
+              <p> Big Time Rush (également connu sous le nom de BTR) est 
+                un groupe de musique américain formé en 2009 à Los Angeles, 
+                en Californie, et composé de Kendall Schmidt, 
+                James Maslow, Carlos Pena, Jr. et de Logan Henderson.</p>
+            
+                <button class="savoir-plus" type="button">En savoir plus</button>
+              </div> 
+        </div>
+      </section>
+  
   </body>
 </html>
