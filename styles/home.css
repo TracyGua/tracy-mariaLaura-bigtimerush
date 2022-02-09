@@ -42,13 +42,13 @@ h1{
   position: absolute;
   top: 50%;
   text-align: center;
-  color: white;
+  color: var(--blanc);
   font-weight: bolder;
   overflow: hidden;
 }
 .savoir-plus {
-    color: var(--noir);
-    font-weight: bold;
+  color: var(--noir);
+  font-weight: bold;
   border: none;
   border-radius: 20px;
   width: 200px;
