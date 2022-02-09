@@ -4,9 +4,6 @@ body{
 html,body{
     margin:0;
 }
-
-
-
 .heros{
 height:100vh;
 width: 100vw;
@@ -18,25 +15,37 @@ width: 100vw;
 picture{
     width: 100%;
     height:100%;
-    background: skyblue;
+    background: var(--blue-pale)
 }
 
 .btr{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+width: 100%;
+height: 100%;
+    position: absolute;
+    object-fit: contain;
 }
 .contraste{
 width: 100%;
-height: 156%;
-background:linear-gradient(to bottom,rgba(255, 255, 255, 0),rgb(149, 216, 255));
+height: 106%;
+background:linear-gradient(to bottom,rgba(0, 243, 20, 0),rgb(149, 216, 255));
 top: 0;
 overflow: hidden;
 position: absolute;
     }
     
 .container-fluid{
-        
-        overflow: hidden;
-        position: absolute;
-    }
+top: 60%;
+position: absolute;
+
+}
+h1{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: var(--punch);
+}
+.savoir{
+    background-color: var(--blue-fonce) ;
+    border-radius: 15px 15px 15px 15px;
+    font-weight: bold;
+    font-family: var(--regulier);
+}
