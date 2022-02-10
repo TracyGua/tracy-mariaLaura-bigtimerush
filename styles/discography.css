@@ -43,9 +43,14 @@ h1{
     font-weight: bold;
     font-family: var(--punch);
 }
-.savoir{
+.btn{
     background-color: var(--blue-fonce) ;
     border-radius: 15px 15px 15px 15px;
     font-weight: bold;
     font-family: var(--regulier);
+}
+
+.navbar{
+    background-color: var(--blue-fonce);
+    width: 100vw;
 }
