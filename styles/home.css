@@ -57,3 +57,12 @@ h1{
 .savoir-plus:hover {
   background-color: var(--rouge-fonce);
 }
+
+
+.navbar {
+  background-color: var(--blue-fonce);
+  width: 100vw;
+}
+.nav-link {
+ font-weight: bolder;
+}
