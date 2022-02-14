@@ -6,7 +6,7 @@ html,body{
 }
 .heros{
 height:100vh;
-width: 100vw;
+width: 100vw;;
 }
 
 @media screen and (orientation: landscape){
@@ -50,7 +50,11 @@ h1{
     font-family: var(--regulier);
 }
 
-.navbar{
-    background-color: var(--blue-fonce);
-    width: 100vw;
+.navbar {
+    background-color: var(--blue-pale);
+    width: 100%;
+
+}
+.nav-link{
+    font-weight: bold;
 }
