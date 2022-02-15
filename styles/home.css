@@ -5,13 +5,12 @@ body {
 body {
   box-sizing: border-box;
 }
-h1{
-    font-family: var(--punch);
+h1 {
+  font-family: var(--punch);
 }
 .hero {
   width: 100vw;
   height: 100vh;
-  position: absolute;
 }
 @media (orientation: landscape) {
   .hero {
@@ -33,9 +32,6 @@ h1{
   height: 100%;
   background-color: var(--rouge-fonce);
   opacity: 0.3;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
 }
 
 .container-fluid {
@@ -58,11 +54,10 @@ h1{
   background-color: var(--rouge-fonce);
 }
 
-
 .navbar {
   background-color: var(--blue-fonce);
   width: 100vw;
 }
 .nav-link {
- font-weight: bolder;
+  font-weight: bolder;
 }
