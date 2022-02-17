@@ -19,7 +19,6 @@ width: 100vw;
 picture{
     width: 100%;
     height:100%;
-    background: var(--blue-pale)
 }
 
 .btr{
@@ -34,18 +33,22 @@ height: 106%;
 background:linear-gradient(to bottom,rgba(0, 243, 20, 0),rgb(149, 216, 255));
 top: 0;
 overflow: hidden;
-position: absolute;
     }
     
-.container{
-top: 60%;
-position: absolute;
+.heros .container-fluid{
+    top: 60%;
+    position: absolute;
+    z-index: 3;
+    top: 60%;
 
 }
 h1{
     font-size: 50px;
     font-weight: bold;
     font-family: var(--punch);
+}
+.heros .row{
+    height: 100%;
 }
 .btn{
     background-color: var(--blue-fonce) ;
@@ -55,14 +58,19 @@ h1{
 }
 
 .navbar {
-    background-color: var(--blue-pale);
-    width: 100%;
-
+    background-color: var(--rouge);
+    width: 100vw;
 }
 .nav-link{
     font-weight: bold;
 }
-footer{
+.nav-link{
+    font-weight: bold;
+}
+.logo{
+    width: 15%;
+}
+/* footer{
     background-color: var(--vert);
     padding: 20px 20px 20px 20px;
     margin-top: 20px;
@@ -71,4 +79,4 @@ footer{
     bottom: 0;
     width: 100%;
     text-align: center;
-}
+} */
