@@ -11,9 +11,11 @@ h1 {
 .hero {
   width: 100vw;
   height: 100vh;
+  position: relative;
 }
-@media (orientation: landscape) {
+@media screen and (orientation: landscape) {
   .hero {
+    width: 100%;
     height: 56.25vw;
   }
 }
@@ -28,19 +30,31 @@ h1 {
   object-position: 0% 15%;
 }
 .contrast-div {
+  position:absolute;
+  z-index: 2;
+  top: 0;
+  left:0;
+  right: 0;
+  bottom: 0;
   width: 100%;
   height: 100%;
   background-color: var(--rouge-fonce);
   opacity: 0.3;
 }
 
-.container-fluid {
+.hero .container-fluid {
   position: absolute;
-  top: 50%;
+  z-index: 3;
+  top: 0;
+  left:0;
+  right:0;
+  bottom: 0;
   text-align: center;
   color: var(--blanc);
   font-weight: bolder;
-  overflow: hidden;
+}
+.row{
+  height: 100%;
 }
 .savoir-plus {
   color: var(--noir);
