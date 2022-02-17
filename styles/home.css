@@ -80,7 +80,15 @@ h1 {
 .logo{
   width: 11%;
 }
+
+/*Cartes*/
+h2{
+  font-family: var(--punch);
+}
 .card{
   width: 100%;
   margin: 10px 0;
+}
+.membre{
+  width: 100%;
 }
