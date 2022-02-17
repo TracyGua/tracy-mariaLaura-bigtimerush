@@ -61,6 +61,8 @@ h1{
     background-color: var(--rouge);
     width: 100vw;
 }
+
+
 .nav-link{
     font-weight: bold;
 }
@@ -68,15 +70,14 @@ h1{
     font-weight: bold;
 }
 .logo{
-    width: 15%;
+    width: 20%;
 }
-/* footer{
+ footer{
     background-color: var(--vert);
     padding: 20px 20px 20px 20px;
     margin-top: 20px;
-    margin-bottom: 20px;
     position: absolute;
     bottom: 0;
     width: 100%;
     text-align: center;
-} */
+} 
