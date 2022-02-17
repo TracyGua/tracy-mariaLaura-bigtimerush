@@ -53,7 +53,7 @@ h1 {
   color: var(--blanc);
   font-weight: bolder;
 }
-.row{
+.hero .row{
   height: 100%;
 }
 .savoir-plus {
@@ -68,8 +68,9 @@ h1 {
   background-color: var(--rouge-fonce);
 }
 
+/*TP2 navbar*/
 .navbar {
-  background-color: var(--blue-fonce);
+  background-color: var(--rouge-pale);
   width: 100vw;
 }
 .nav-link {
