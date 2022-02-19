@@ -100,10 +100,15 @@ footer a:hover {
 h2 {
   font-family: var(--punch);
 }
+.row {
+  position: relative;
+}
 .card {
   width: 100%;
   margin: 10px 0;
+  position: relative;
 }
+
 .membre {
   width: 100%;
 }
