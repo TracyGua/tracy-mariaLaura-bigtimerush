@@ -30,10 +30,10 @@ h1 {
   object-position: 0% 15%;
 }
 .contrast-div {
-  position:absolute;
+  position: absolute;
   z-index: 2;
   top: 0;
-  left:0;
+  left: 0;
   right: 0;
   bottom: 0;
   width: 100%;
@@ -46,14 +46,14 @@ h1 {
   position: absolute;
   z-index: 3;
   top: 0;
-  left:0;
-  right:0;
+  left: 0;
+  right: 0;
   bottom: 0;
   text-align: center;
   color: var(--blanc);
   font-weight: bolder;
 }
-.hero .row{
+.hero .row {
   height: 100%;
 }
 .savoir-plus {
@@ -77,10 +77,33 @@ h1 {
 .nav-link {
   font-weight: bolder;
 }
-.logo{
+.logo {
   width: 11%;
 }
-.card{
+
+/*footer*/
+footer {
+  background-color: var(--rouge-pale);
+  padding: 20px;
+  margin: 20px 0;
+  color: var(--blanc);
+}
+footer a {
+  text-decoration: none;
+  color: var(--blanc);
+}
+footer a:hover {
+  color: var(--noir);
+}
+
+/*Cartes*/
+h2 {
+  font-family: var(--punch);
+}
+.card {
   width: 100%;
   margin: 10px 0;
+}
+.membre {
+  width: 100%;
 }
