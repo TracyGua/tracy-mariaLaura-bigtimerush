@@ -57,11 +57,14 @@ h1{
 }
 
 .navbar {
-    background-color: var(--blue-pale);
+    background:linear-gradient(var(--blue-pale), var(--rouge-pale));
     width: 100vw;
     opacity: 0.8;
 }
-
+.text-lg-start{
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+}
 
 .nav-link{
     font-weight: bold;
@@ -74,10 +77,13 @@ h1{
 }
 
  footer{
-    background:linear-gradient(var(--rouge-pale2), var(--blue-pale));
+    background:linear-gradient(var(--rouge-pale), var(--blue-pale));
     padding: 20px 20px 20px 20px;
     margin-top: 20px;
     width: 100%;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Bebas Neue', cursive;
 } 
 
 a:link {
