@@ -30,9 +30,8 @@ height: 100%;
 .contraste{
 width: 100%;
 height: 106%;
-background:linear-gradient(to bottom,rgba(0, 243, 20, 0),rgb(149, 216, 255));
+background:linear-gradient(to bottom,rgba(0, 243, 20, 0),rgb(111, 222, 236));
 top: 0;
-overflow: hidden;
     }
     
 .heros .container-fluid{
@@ -58,8 +57,9 @@ h1{
 }
 
 .navbar {
-    background-color: var(--rouge);
+    background-color: var(--blue-pale);
     width: 100vw;
+    opacity: 0.8;
 }
 
 
@@ -70,14 +70,22 @@ h1{
     font-weight: bold;
 }
 .logo{
-    width: 20%;
+    width: 10%;
 }
+
  footer{
-    background-color: var(--vert);
+    background:linear-gradient(var(--rouge-pale2), var(--blue-pale));
     padding: 20px 20px 20px 20px;
     margin-top: 20px;
-    position: absolute;
-    bottom: 0;
     width: 100%;
-    text-align: center;
 } 
+
+a:link {
+    text-decoration: none;
+  }
+a:hover{
+    color: var(--vert);
+}
+p{
+    text-align: center;
+}
