@@ -98,21 +98,35 @@ footer a:hover {
 }
 
 /*Cartes*/
+.cartes {
+  margin-top: 10px;
+}
 h2 {
   font-family: var(--punch);
 }
-.row {
-  position: relative;
-}
+
 .card {
   width: 100%;
-  margin: 10px 0;
-  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .membre {
   width: 100%;
 }
-main {
-  width: 180px;
+
+.button-savoir {
+  color: var(--blanc);
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: var(--rouge-pale2);
+  border-radius: 10px;
+}
+
+.button-savoir:hover {
+  color: var(--blanc);
+  background-color: var(--rouge-pale);
 }
