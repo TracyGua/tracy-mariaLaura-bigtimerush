@@ -82,21 +82,6 @@ h1 {
   width: 11%;
 }
 
-/*footer*/
-footer {
-  background-color: var(--rouge-pale);
-  padding: 20px;
-  margin: 20px 0;
-  color: var(--blanc);
-}
-footer a {
-  text-decoration: none;
-  color: var(--blanc);
-}
-footer a:hover {
-  color: var(--noir);
-}
-
 /*Cartes*/
 .cartes {
   margin-top: 10px;
@@ -129,4 +114,18 @@ h2 {
 .button-savoir:hover {
   color: var(--blanc);
   background-color: var(--rouge-pale);
+}
+/*footer*/
+footer {
+  background-color: var(--rouge-pale);
+  padding: 20px;
+  margin-top: 20px;
+  color: var(--blanc);
+}
+footer a {
+  text-decoration: none;
+  color: var(--blanc);
+}
+footer a:hover {
+  color: var(--noir);
 }
