@@ -73,6 +73,7 @@ h1 {
   background-color: var(--rouge-pale);
   width: 100vw;
   opacity: 0.9;
+  position: fixed;
 }
 .nav-link {
   font-weight: bolder;
@@ -112,6 +113,6 @@ h2 {
 .membre {
   width: 100%;
 }
-main{
-  width:180px ;
+main {
+  width: 180px;
 }
