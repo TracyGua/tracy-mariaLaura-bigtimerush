@@ -74,7 +74,6 @@ h1 {
   background-color: var(--rouge-pale);
   width: 100vw;
   opacity: 0.9;
-  position: fixed;
 }
 .nav-link {
   font-weight: bolder;
