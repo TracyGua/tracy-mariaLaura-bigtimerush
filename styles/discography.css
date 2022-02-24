@@ -80,6 +80,7 @@ h1{
     background:linear-gradient(var(--rouge-pale), var(--blue-pale));
     padding: 20px;
     margin: 20px 0;
+    margin-bottom: 0;
     font-weight: bold;
     font-size: 18px;
     font-family: 'Bebas Neue', cursive;
@@ -87,27 +88,53 @@ h1{
 
 footer a {
     text-decoration: none;
+    color: black;
   }
 footer a:hover{
-    color: var(--vert);
+    color: var(--blue-fonce);
 }
 p{
     text-align: center;
 }
-.barrelateral{
-    background-color: gold;
-    width: 180px;
+
+
+main{
+    margin-top: 60px;
+    font-family:'Bebas Neue', cursive; ;
 }
-section{
-    background-color: aqua;
-}
+
 .animation{
     width: 100%;
 }
-.zoneprincipal{
-    width: 100%;
+
+
+.btn{
+    scroll-behavior: smooth;
 }
-.col-md-9{
-    width: 75%;
-    background-color: blueviolet;
+
+
+.img1{
+    height: 300px;
+    width: 300px;
+    
+}
+.premieralbum{
+    margin-top: 40px;
+    background-color: var(--blue-pale);
+    
+    
+    
+    }
+
+.deuxalbum{
+    margin-top: 40px;
+    background-color: var(--rouge-pale);
+   
+    
+}
+
+.troisalbum{
+    margin-top: 40px;
+    background-color: var(--rouge-pale2);
+   
 }
