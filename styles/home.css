@@ -130,6 +130,15 @@ footer a:hover {
   color: var(--noir);
 }
 
+.nom1:hover{
+  color: var(--noir);
+  cursor: pointer;
+}
+.nom2:hover{
+  color: var(--noir);
+  cursor: pointer;
+}
+
 /*Barre lat*/
 .barre {
   display: none;
