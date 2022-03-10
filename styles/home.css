@@ -98,6 +98,9 @@ h2 {
 
 .membre {
   width: 100%;
+  height: 30vh;
+  object-fit: cover;
+  object-position: 0 30%;
 }
 
 .button-savoir {
@@ -130,11 +133,11 @@ footer a:hover {
   color: var(--noir);
 }
 
-.nom1:hover{
+.nom1:hover {
   color: var(--noir);
   cursor: pointer;
 }
-.nom2:hover{
+.nom2:hover {
   color: var(--noir);
   cursor: pointer;
 }
