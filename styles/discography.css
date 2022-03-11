@@ -142,6 +142,14 @@ main{
    
 }
 
-.site:hover{
-    display: none;
+h2{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: var(--punch);
+}
+.video{
+    margin-top: 30px;
+}
+.ratio{
+    aspect-ratio: 16/9;
 }
