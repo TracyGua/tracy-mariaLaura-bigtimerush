@@ -9,6 +9,7 @@ html,body{
 .heros{
 height:100vh;
 width: 100vw;
+position: relative;
 
 }
 
@@ -29,7 +30,7 @@ height: 100%;
 }
 .contraste{
 width: 100%;
-height: 106%;
+height: 100%;
 background:linear-gradient(to bottom,rgba(0, 243, 20, 0),rgb(111, 222, 236));
 top: 0;
     }
@@ -113,14 +114,16 @@ main{
 }
 
 
-.img1{
-    height: 300px;
-    width: 300px;
+.img-fluid .img1{
+    max-width: 100%;
+    height: auto;
     
 }
+
+
 .premieralbum{
     margin-top: 40px;
-    background-color: var(--blue-pale);
+    background-color: rgb(240, 238, 238);
     
     
     
@@ -128,13 +131,17 @@ main{
 
 .deuxalbum{
     margin-top: 40px;
-    background-color: var(--rouge-pale);
+    background-color: rgb(240, 238, 238);
    
     
 }
 
 .troisalbum{
     margin-top: 40px;
-    background-color: var(--rouge-pale2);
+    background-color: rgb(240, 238, 238);
    
+}
+
+.site:hover{
+    display: none;
 }
