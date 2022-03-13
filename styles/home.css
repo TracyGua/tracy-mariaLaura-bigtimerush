@@ -141,6 +141,16 @@ footer a:hover {
   color: var(--noir);
   cursor: pointer;
 }
+/*Modal*/
+.modal-title {
+  color: var(--noir);
+}
+.mariaLaura,
+.tracy {
+  width: 300px;
+  margin: 0 auto;
+  display: block;
+}
 
 /*Barre lat*/
 .barre {
