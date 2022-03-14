@@ -40,21 +40,26 @@
   <body>
     <header>
       <section class="heros">
-          <picture>
-            <source srcset="img/btr.jpg" media="(min-width: 1000px)">
-            <img  src="img/elevate.jpg" class="btr img-fluid">
-          </picture>
+         <div class="mySwiper">
+          <div class="swiper-wrapper">
+           <div class="swiper-slide"><img class="btr img-fluid" src="img/btr.jpg"></div>
+           <div class="swiper-slide"><img class="btr img-fluid" src="img/elevate.jpg"></div>
+           <div class="swiper-slide"><img class="btr img-fluid" src="img/album_01.jpg"></div>
+            <!-- <source srcset="img/btr.jpg" media="(min-width: 1000px)">
+            <img  src="img/elevate.jpg" class="btr img-fluid"> -->
+          </div>
+          </div>
           <div class="contraste"></div>
           <div class="container-fluid">
             <div class="row justify-content-start">
-            <div class="col-12 col-sm-8">
+            <div class="col-sm-8 col-12">
             <h1>Discographie</h1>
             <p class="text-lg-start">Big Time Rush à jusqu'à présent 3 albums studio répartis entre 2009 et 2014.</p>
             <a href="#main"><button type="button" class="btn">En savoir plus</button></a>
           </div>
+          </div>
         </div>
-        </div>
-      </section>
+        </section>
       </header>
       <nav class="navbar navbar-dark navbar-expand-sm sticky-top">
         <div class="container">
@@ -156,7 +161,9 @@
               <section class="video">
                 <h2>Video</h2>
                 <div class="ratio">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Z_Al0GXbCm8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/Z_Al0GXbCm8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
               </div>
               </section>
               </section>
@@ -168,8 +175,8 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="text-center">
-          <div class="d-lg-flex justify-content-start"> <p> Maria Laura Coronel</p></div>
-          <div class="d-lg-flex justify-content-start"> <p> Tracy Gua</p></div>
+           <div data-bs-toggle="modal" data-bs-target="#Maria" class="d-lg-flex justify-content-start"> <p class="survole"> Maria Laura Coronel</p></div>
+          <div  data-bs-toggle="modal" data-bs-target="#Tracy" class="d-lg-flex justify-content-start"> <p class="survole"> Tracy Gua</p></div>
         <a class="d-lg-flex justify-content-end" href="https://github.com/TracyGua/tracy-mariaLaura-megazord.git">https://github.com/TracyGua/tracy-mariaLaura-megazord.git </a></div>
           <div class="d-lg-flex justify-content-end"> <p>©2022</p></div>
         </div>   
@@ -184,7 +191,43 @@
       <script src="scripts/main.js"></script>
       <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script>
-    var swiper = new Swiper(".mySwiper", {});
+    var swiper = new Swiper(".mySwiper", {
+      autoplay:{
+        delay: 2000,
+      },
+      direction:'vertical',
+      loop:'true',
+      effect:'flip',
+    });
   </script>
+
+<div class="modal fade" id="Maria" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">Maria Laura Coronel</h2>
+        <button class="btn-close" data-bs-dismiss="modal" aria-label="Fermer la fenêtre"></button>
+      </div>
+      <div class="modal-body">
+       <img class="modal1" src="img/maria_modal.jpg">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="Tracy" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">Tracy Gua</h2>
+        <button class="btn-close" data-bs-dismiss="modal" aria-label="Fermer la fenêtre"></button>
+      </div>
+      <div class="modal-body">
+        <img class="modal1" src="img/tracy_modal.png">
+      </div>
+    </div>
+  </div>
+</div>
   </body>
 </html>
