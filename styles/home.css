@@ -86,7 +86,11 @@ h1 {
 
 .swiper-slide img {
   width: 100%;
-  border: solid 0.5px var(--rouge-pale);
+  object-fit: cover;
+}
+
+.swiper {
+  aspect-ratio: 16 / 9;
 }
 
 /*Cartes*/
