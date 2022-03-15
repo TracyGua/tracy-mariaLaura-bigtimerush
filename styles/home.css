@@ -93,11 +93,11 @@ h1 {
   aspect-ratio: 16 / 9;
 }
 .swiper-pagination-bullets .swiper-pagination-bullet {
-  background-color: var(--rouge-pale);
+  background-color: var(--rouge-pale2);
   opacity: 1;
 }
 .swiper-pagination-bullets .swiper-pagination-bullet-active {
-  background-color: var(--blue-fonce);
+  background-color: var(--rouge-fonce);
   opacity: 1;
 }
 /*Cartes*/
