@@ -92,7 +92,14 @@ h1 {
 .swiper {
   aspect-ratio: 16 / 9;
 }
-
+.swiper-pagination-bullets .swiper-pagination-bullet {
+  background-color: var(--rouge-pale);
+  opacity: 1;
+}
+.swiper-pagination-bullets .swiper-pagination-bullet-active {
+  background-color: var(--blue-fonce);
+  opacity: 1;
+}
 /*Cartes*/
 .cartes {
   margin-top: 10px;
