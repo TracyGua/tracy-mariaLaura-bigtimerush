@@ -83,7 +83,9 @@ h1 {
 }
 
 /*Carousel*/
-
+.carousel .title-2 {
+  margin-top: 20px;
+}
 .swiper-slide img {
   width: 100%;
   object-fit: cover;
