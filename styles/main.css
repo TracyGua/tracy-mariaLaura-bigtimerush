@@ -20,6 +20,7 @@ body {
   font-family: var(--punch);
   font-size: 35px;
   color: var(--noir);
+  font-stretch: ultra-condensed;
 }
 .title-2 {
   font-family: var(--punch);
