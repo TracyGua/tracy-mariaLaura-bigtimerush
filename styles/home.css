@@ -93,6 +93,7 @@ h1 {
 
 .swiper {
   aspect-ratio: 16 / 9;
+  box-shadow: 0 0 7px 7px rgb(168, 52, 62, 0.4);
 }
 .swiper-pagination-bullets .swiper-pagination-bullet {
   background-color: var(--rouge-pale2);
@@ -115,9 +116,13 @@ h2 {
 }
 
 .card {
+  box-shadow: 10px 10px 10px rgb(168, 52, 62, 0.4);
   width: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+.card-footer {
+  background-color: var(--rouge-pale2);
 }
 
 .membre {
@@ -173,6 +178,9 @@ footer a:hover {
 /*Modal*/
 .modal-title {
   color: var(--rouge-pale);
+}
+.modal .modal-content {
+  background: linear-gradient(var(--blanc), var(--rouge-pale));
 }
 .mariaLaura,
 .tracy {

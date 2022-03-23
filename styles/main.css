@@ -1,7 +1,4 @@
-@font-face {
-  font-family: 'Toronto';
-  src: url("fonte/toronto-gothic_bigfontsite.com.woff2") format("woff2");
-}
+
 :root {
   --rouge: #d12c32;
   --rouge-pale2: #e86868;
