@@ -197,6 +197,9 @@ h2 {
 .album:link {
   background-color: var(--rouge-pale);
 }
+.modal-title {
+  color: var(--rouge-pale);
+}
 
 .survole:hover {
   color: var(--noir);
@@ -211,6 +214,6 @@ h2 {
 .modal .modal-content {
   background-color: var(--rouge-fonce);
 }
-.modal .modal-content{
-    background-color: var(--rouge-fonce);
+.modal .modal-content {
+  background: linear-gradient(var(--blanc), var(--rouge-pale));
 }
