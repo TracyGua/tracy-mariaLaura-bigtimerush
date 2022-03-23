@@ -42,7 +42,7 @@ width: 100%;
 height: 100%;
 position: absolute;
 top: 0;
-background:linear-gradient(to bottom,rgba(0, 0, 0, 0),var(--rouge-fonce));
+background:linear-gradient(to bottom,rgba(0, 0, 0, 0),rgb(168, 52, 62, 0.3));
 }
 
 .heros .container-fluid {
@@ -54,7 +54,6 @@ background:linear-gradient(to bottom,rgba(0, 0, 0, 0),var(--rouge-fonce));
 h1{
     color: var(--blanc);
     font-size: 50px;
-    font-weight: bold;
     font-family: var(--punch);
 }
 .heros .row {
@@ -62,7 +61,7 @@ h1{
 }
 .btn{
     color: var(--noir);
-    background-color: var(--blue-pale) ;
+    background-color: var(--rouge-pale) ;
     border-radius: 20px 20px 20px 20px;
     font-weight: bold;
     border: none;
@@ -70,7 +69,7 @@ h1{
     font-family: var(--regulier);
 }
 .btn:hover{
-    background-color: var(--blue-fonce);
+    background-color: var(--rouge-fonce);
 }
 
 .navbar {
@@ -81,7 +80,7 @@ h1{
 .text-lg-start{
     color: var(--blanc);
     font-weight: bold;
-    font-family: 'Bebas Neue', cursive;
+    font-family: var(--regulier);
 }
 
 .nav-link {
@@ -140,7 +139,7 @@ main {
   background-color: white;
   color: var(--rouge-fonce);
   font-weight: bold;
-  box-shadow: 0 0 8px 8px rgb(168, 52, 62, 0.4);
+  box-shadow: 0 0 5px 5px rgb(168, 52, 62, 0.4);
 }
 
 .deuxalbum {
@@ -150,7 +149,7 @@ main {
   background-color: white;
   color: var(--rouge-fonce);
   font-weight: bold;
-  box-shadow: 0 0 8px 8px rgb(168, 52, 62, 0.4);
+  box-shadow: 0 0 5px 5px rgb(168, 52, 62, 0.4);
 }
 
 .troisalbum {
@@ -160,7 +159,7 @@ main {
   background-color: white;
   color: var(--rouge-fonce);
   font-weight: bold;
-  box-shadow: 0 0 8px 8px rgb(168, 52, 62, 0.4);
+  box-shadow: 0 0 5px 5px rgb(168, 52, 62, 0.4);
 }
 
 h2 {
@@ -175,9 +174,13 @@ h2 {
   aspect-ratio: 16/9;
 }
 
+.album a{
+  text-decoration: none;
+  color: var(--noir);
+}
 .album{
     color: var(--noir);
-    background-color: var(--blue-pale) ;
+    background-color: var(--rouge-pale2) ;
     border-radius: 20px 20px 20px 20px;
     font-weight: bold;
     border: none;
