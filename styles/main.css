@@ -1,4 +1,7 @@
-
+@font-face {
+  src: url("fonts/toronto-gothic_bigfontsite.com.ttf") format("truetype");
+  font-family: "toronto-gothic";
+}
 :root {
   --rouge: #d12c32;
   --rouge-pale2: #e86868;
@@ -10,7 +13,8 @@
   --noir: black;
   --blanc: white;
   --regulier: "Dosis", sans-serif;
-  --punch: "Black Ops One", cursive;
+  --punch: "toronto-gothic";
+  --punch2: "Black Ops One", cursive;
 }
 
 body {
@@ -28,7 +32,7 @@ body {
   font-size: 30px;
   color: var(--rouge-fonce);
 }
-.title-2 {
+.title-3 {
   font-family: var(--punch);
   font-size: 25px;
   color: var(--blue-fonce);
