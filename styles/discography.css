@@ -139,7 +139,7 @@ main {
   background-color: white;
   color: var(--rouge-fonce);
   font-weight: bold;
-  box-shadow: 10px 10px 10px rgb(168, 52, 62, 0.4);
+  box-shadow: 0 0 8px 8px rgb(168, 52, 62, 0.4);
 }
 
 .deuxalbum {
@@ -149,7 +149,7 @@ main {
   background-color: white;
   color: var(--rouge-fonce);
   font-weight: bold;
-  box-shadow: 10px 10px 10px rgb(168, 52, 62, 0.4);
+  box-shadow: 0 0 8px 8px rgb(168, 52, 62, 0.4);
 }
 
 .troisalbum {
@@ -159,7 +159,7 @@ main {
   background-color: white;
   color: var(--rouge-fonce);
   font-weight: bold;
-  box-shadow: 10px 10px 10px rgb(168, 52, 62, 0.4);
+  box-shadow: 0 0 8px 8px rgb(168, 52, 62, 0.4);
 }
 
 h2 {

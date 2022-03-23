@@ -93,6 +93,7 @@ h1 {
 
 .swiper {
   aspect-ratio: 16 / 9;
+  box-shadow: 0 0 7px 7px rgb(168, 52, 62, 0.4);
 }
 .swiper-pagination-bullets .swiper-pagination-bullet {
   background-color: var(--rouge-pale2);
@@ -115,6 +116,7 @@ h2 {
 }
 
 .card {
+  box-shadow: 10px 10px 10px rgb(168, 52, 62, 0.4);
   width: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
