@@ -177,6 +177,9 @@ footer a:hover {
 .modal-title {
   color: var(--rouge-pale);
 }
+.modal .modal-content {
+  background: linear-gradient(var(--blanc), var(--rouge-pale));
+}
 .mariaLaura,
 .tracy {
   width: 300px;

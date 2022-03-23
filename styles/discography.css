@@ -136,30 +136,30 @@ main {
   padding-left: 20px;
   padding-bottom: 20px;
   margin-top: 40px;
-  background-color: rgb(168, 52, 62, 0.3);
+  background-color: white;
   color: var(--rouge-fonce);
   font-weight: bold;
-  box-shadow: 10px 10px 10px rgb(168, 52, 62, 0.5);
+  box-shadow: 10px 10px 10px rgb(168, 52, 62, 0.4);
 }
 
 .deuxalbum {
   padding-right: 20px;
   padding-bottom: 20px;
   margin-top: 40px;
-  background-color: rgb(168, 52, 62, 0.3);
+  background-color: white;
   color: var(--rouge-fonce);
   font-weight: bold;
-  box-shadow: 10px 10px 10px rgb(168, 52, 62, 0.5);
+  box-shadow: 10px 10px 10px rgb(168, 52, 62, 0.4);
 }
 
 .troisalbum {
   padding-right: 20px;
   padding-bottom: 20px;
   margin-top: 40px;
-  background-color: rgb(168, 52, 62, 0.3);
+  background-color: white;
   color: var(--rouge-fonce);
   font-weight: bold;
-  box-shadow: 10px 10px 10px rgb(168, 52, 62, 0.5);
+  box-shadow: 10px 10px 10px rgb(168, 52, 62, 0.4);
 }
 
 h2 {
@@ -205,5 +205,5 @@ h2 {
   display: block;
 }
 .modal .modal-content {
-  background: linear-gradient(var(--rouge-pale), var(--blue-pale));
+  background: linear-gradient(var(--blanc), var(--rouge-pale));
 }
