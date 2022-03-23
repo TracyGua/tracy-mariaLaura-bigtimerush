@@ -75,6 +75,7 @@ h1 {
 .navbar {
   background-color: var(--rouge-pale);
   width: 100vw;
+  opacity: 0.9;
 }
 .text-lg-start {
   font-family: var(--regulier);
@@ -132,24 +133,33 @@ main {
 }
 
 .premieralbum {
+  padding-left: 20px;
+  padding-bottom: 20px;
   margin-top: 40px;
-  background-color: white;
-  border: solid 0.5px var(--rouge-fonce);
-  color: var(--noir);
+  background-color: rgb(168, 52, 62, 0.3);
+  color: var(--rouge-fonce);
+  font-weight: bold;
+  box-shadow: 10px 10px 10px rgb(168, 52, 62, 0.5);
 }
 
 .deuxalbum {
+  padding-right: 20px;
+  padding-bottom: 20px;
   margin-top: 40px;
-  background-color: white;
-  border: solid 0.5px var(--rouge-fonce);
-  color: var(--noir);
+  background-color: rgb(168, 52, 62, 0.3);
+  color: var(--rouge-fonce);
+  font-weight: bold;
+  box-shadow: 10px 10px 10px rgb(168, 52, 62, 0.5);
 }
 
 .troisalbum {
+  padding-right: 20px;
+  padding-bottom: 20px;
   margin-top: 40px;
-  background-color: white;
-  border: solid 0.5px var(--rouge-fonce);
-  color: var(--noir);
+  background-color: rgb(168, 52, 62, 0.3);
+  color: var(--rouge-fonce);
+  font-weight: bold;
+  box-shadow: 10px 10px 10px rgb(168, 52, 62, 0.5);
 }
 
 h2 {
@@ -165,11 +175,20 @@ h2 {
 }
 
 .album {
-  border-radius: 15px 15px 15px 15px;
-  background-color: var(--blue-pale);
-  font-weight: bold;
+  border-radius: 6px;
+  background-color: var(--rouge-pale2);
   padding: 5px 5px 5px 5px;
   border: none;
+  color: white;
+}
+
+.album a {
+  text-decoration: none;
+  color: white;
+}
+
+.album:hover {
+  background-color: var(--rouge-pale);
 }
 .album:link {
   background-color: var(--rouge-pale);
