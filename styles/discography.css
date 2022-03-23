@@ -42,7 +42,7 @@ width: 100%;
 height: 100%;
 position: absolute;
 top: 0;
-background:linear-gradient(to bottom,rgba(0, 0, 0, 0),var(--blue-fonce));
+background:linear-gradient(to bottom,rgba(0, 0, 0, 0),var(--blue-pale));
 }
 
 .heros .container-fluid {
@@ -206,8 +206,8 @@ h2 {
   display: block;
 }
 .modal .modal-content {
-  background: linear-gradient(var(--blanc), var(--rouge-pale));
+  background-color: var(--rouge-fonce);
 }
 .modal .modal-content{
-    background:linear-gradient(var(--rouge-pale), var(--blue-pale));
+    background-color: var(--rouge-fonce);
 }
