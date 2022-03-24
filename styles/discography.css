@@ -37,12 +37,16 @@ body {
   position: absolute;
   object-fit: contain;
 }
-.contraste{
-width: 100%;
-height: 100%;
-position: absolute;
-top: 0;
-background:linear-gradient(to bottom,rgba(0, 0, 0, 0),rgb(168, 52, 62, 0.3));
+.contraste {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgb(168, 52, 62, 0.3)
+  );
 }
 
 .heros .container-fluid {
@@ -51,25 +55,25 @@ background:linear-gradient(to bottom,rgba(0, 0, 0, 0),rgb(168, 52, 62, 0.3));
   z-index: 3;
   top: 60%;
 }
-h1{
-    color: var(--blanc);
-    font-size: 50px;
-    font-family: var(--punch);
+h1 {
+  color: var(--blanc);
+  font-size: 50px;
+  font-family: var(--punch);
 }
 .heros .row {
   height: 100%;
 }
-.btn{
-    color: var(--noir);
-    background-color: var(--rouge-pale) ;
-    border-radius: 20px 20px 20px 20px;
-    font-weight: bold;
-    border: none;
-    width: 200px;
-    font-family: var(--regulier);
+.btn {
+  color: var(--noir);
+  background-color: var(--rouge-pale);
+  border-radius: 20px 20px 20px 20px;
+  font-weight: bold;
+  border: none;
+  width: 200px;
+  font-family: var(--regulier);
 }
-.btn:hover{
-    background-color: var(--rouge-fonce);
+.btn:hover {
+  background-color: var(--rouge-fonce);
 }
 
 .navbar {
@@ -77,10 +81,10 @@ h1{
   width: 100vw;
   opacity: 0.9;
 }
-.text-lg-start{
-    color: var(--blanc);
-    font-weight: bold;
-    font-family: var(--regulier);
+.text-lg-start {
+  color: var(--blanc);
+  font-weight: bold;
+  font-family: var(--regulier);
 }
 
 .nav-link {
@@ -174,21 +178,21 @@ h2 {
   aspect-ratio: 16/9;
 }
 
-.album a{
+.album a {
   text-decoration: none;
   color: var(--noir);
 }
-.album{
-    color: var(--noir);
-    background-color: var(--rouge-pale2) ;
-    border-radius: 20px 20px 20px 20px;
-    font-weight: bold;
-    border: none;
-    width: 200px;
-    font-family: var(--regulier);
+.album {
+  color: var(--noir);
+  background-color: var(--rouge-pale2);
+  border-radius: 20px 20px 20px 20px;
+  font-weight: bold;
+  border: none;
+  width: 200px;
+  font-family: var(--regulier);
 }
-.album:hover{
-    background-color: var(--blue-fonce);
+.album:hover {
+  background-color: var(--blue-fonce);
 }
 
 .album:hover {
