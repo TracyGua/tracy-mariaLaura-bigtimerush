@@ -90,7 +90,7 @@
         <div class="col-md-3 d-none d-md-block">
           <img class="animation" src=img/maLPGgu.png alt="L'image est innaccessible">
         </div>
-        <section class="col-md-9 col-12">
+        <section class="col-md-9 col-12 scroll">
 
           <!-- Premier album -->
           <section class="premieralbum">
@@ -115,7 +115,7 @@
           <!-- deux album -->
           <section class="deuxalbum">
             <div class="row">
-              <div class="col-sm-7 col-12"><img class="img-fluid img1" src="img/album_02.jpg" alt="L'image est innaccessible"></div>
+              <div class="col-sm-7 col-12"><img class="img-fluid img2" src="img/album_02.jpg" alt="L'image est innaccessible"></div>
               <div class="col-sm-5 col-12">Elevate<br></br>
                 1. Music Sounds Better with U (feat. Mann)<br></br>
                 2. Show Me<br></br>
@@ -153,7 +153,7 @@
                 <button type="button" class="album"><a
                     href="https://fr.wikipedia.org/wiki/BTR_(album)"> En savoir plus </a>
               </div> </button>
-              <div class="col-sm-7 col-12"><img class="img-fluid img1" src="img/album_03.jpg" alt="L'image est innaccessible"></div>
+              <div class="col-sm-7 col-12"><img class="img-fluid img3" src="img/album_03.jpg" alt="L'image est innaccessible"></div>
             </div>
           </section>
           <section class="video">
@@ -212,6 +212,9 @@
 
   <script src="scripts/main.js"></script>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
   <script>
     var swiper = new Swiper(".mySwiper", {
       autoplay: {
@@ -221,6 +224,93 @@
       loop: 'true',
       effect: 'flip',
     });
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.timeline({
+
+    })
+    gsap.to(".scroll .img1", {
+      scrollTrigger: {
+        start:'center 75%',
+        trigger: '.scroll .img1',
+        toggleActions: 'restart  reverse reset' ,
+      },
+        duration:1,
+        opacity:'100%',
+        x:"-50px",
+        ease:"bounce",
+     
+    })
+    gsap.to(".premieralbum",{
+      scrollTrigger:{
+        start:'center 75%',
+        toggleActions: 'restart  reverse reset',
+        trigger: '.premieralbum',
+      },
+      opacity:'100%',
+      duration:1,
+      x:'50px',
+      ease:"bounce",
+    })
+    gsap.to(".img2", {
+      scrollTrigger: {
+        start:'center 75%',
+        trigger: '.img2',
+        toggleActions: 'restart  reverse reset' ,
+      },
+        duration:1,
+        opacity:'100%',
+        x:"50px",
+        ease:"bounce",
+    })
+
+    gsap.to(".deuxalbum", {
+      scrollTrigger:{
+        start:'center 75%',
+        trigger:'.deuxalbum',
+        toggleActions:'restart  reverse reset',
+      },
+      opacity:"100%",
+      duration:1,
+      x:'-50px',
+      ease:"bounce",
+      
+    },"-=0.5")
+    gsap.to(".troisalbum",{
+      scrollTrigger:{
+        start:'center 75%',
+        toggleActions:'restart  reverse reset',
+        trigger:'.troisalbum',
+      },
+      opacity:"100%",
+      duration:1,
+      x:"50px",
+      ease:"bounce",
+
+    })
+    gsap.to(".img3", {
+      scrollTrigger: {
+        start:'center 75%',
+        trigger: '.img3',
+        toggleActions: 'restart  reverse reset' ,
+      },
+        duration:1,
+        opacity:'100%',
+        x:"20px",
+        ease:"bounce",
+     
+    })
+    gsap.to(".video", {
+      scrollTrigger: {
+        start:'center 75%',
+        trigger: '.video',
+        toggleActions: 'restart  reverse reset' ,
+      },
+        duration:1,
+        opacity:'100%',
+        rotateX: 360,
+        ease:"slow",
+     
+    })
   </script>
 
   <div class="modal fade" id="Maria" tabindex="-1">
