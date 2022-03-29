@@ -139,7 +139,7 @@
             </div>
           </div>
 
-        <div class="col-sm-6 card3">
+        <div class="col-sm-6 card4">
           <div class="card">
             <img src="img/carlos.jpg" alt="L'image est innaccessible" class="membre 1">
             <div class="card-body">
@@ -152,7 +152,7 @@
           </div>
         </div>
 
-      <div class="col-sm-6 card4">
+      <div class="col-sm-6 card3">
         <div class="card">
           <img src="img/logan.jpg" alt="L'image est innaccessible" class="membre 1">
           <div class="card-body">
@@ -254,17 +254,13 @@
 
       gsap.registerPlugin(ScrollTrigger);
 
-gsap.timeline({
-    
-}
-)
-
+gsap.timeline()
 
 gsap.to(".carousel .title-2", {
   scrollTrigger: {
     start: 'center 75%',
 trigger: '.carousel .title-2',
-toggleActions: 'restart  reverse reset',},
+toggleActions: 'restart reverse reset',},
 opacity: '100%',
 rotateX: 360,
 duration: 1,
@@ -273,7 +269,7 @@ duration: 1,
 gsap.to(".swiper", {
   scrollTrigger: {
     start: 'center 75%',
-    toggleActions: 'restart  reverse reset',
+    toggleActions: 'restart reverse reset',
 trigger: '.swiper'},
 opacity: '100%',
 rotateY: 360,
@@ -284,7 +280,7 @@ gsap.to(".cartes .title-2", {
   scrollTrigger: {
     start: 'center 75%',
 trigger: '.cartes .title-2',
-toggleActions: 'restart  reverse reset',},
+toggleActions: 'restart reverse reset',},
 opacity: '100%',
 rotateX: 360,
 duration: 1,
@@ -293,9 +289,9 @@ duration: 1,
 gsap.to(".card1", {
   scrollTrigger: {
     start: 'center 75%',
-    toggleActions: 'restart  reverse reset',
+    toggleActions: 'restart reverse reset',
 trigger: '.card1'},
-opacity: '100%',
+opacity: 1,
 rotateX: 360,
 duration: 1,
 ease: 'back'
@@ -306,7 +302,7 @@ gsap.to(".card2", {
     start: 'center 75%',
     toggleActions: 'restart  reverse reset',
 trigger: '.card2'},
-opacity: '100%',
+opacity: 1,
 rotateX: 360,
 duration: 1,
 ease: 'back'
@@ -315,9 +311,9 @@ ease: 'back'
 gsap.to(".card3", {
   scrollTrigger: {
     start: 'center 75%',
-    toggleActions: 'restart  reverse reset',
+    toggleActions: 'restart reverse reset',
 trigger: '.card3'},
-opacity: '100%',
+opacity: 1,
 rotateX: 360,
 duration: 1,
 ease: 'back'
@@ -326,13 +322,34 @@ ease: 'back'
 gsap.to(".card4", {
   scrollTrigger: {
     start: 'center 75%',
-    toggleActions: 'restart  reverse reset',
+    toggleActions: 'restart reverse reset',
 trigger: '.card4'},
-opacity: '100%',
+opacity: 1,
 rotateX: 360,
 duration: 1,
 ease: 'back'
 })
+
+gsap.to(".video .title-2", {
+  scrollTrigger: {
+    start: 'center 75%',
+    toggleActions: 'restart reverse reset',
+trigger: '.video .title-2'},
+opacity: '100%',
+rotateX: 360,
+duration: 1,
+})
+
+gsap.to(".video .ratio", {
+  scrollTrigger: {
+    start: 'center 75%',
+    toggleActions: 'restart reverse reset',
+trigger: '.video .ratio'},
+opacity: '100%',
+rotateY: 360,
+duration: 1,
+}, '-=0.25') 
+
 
     </script>
   </body>

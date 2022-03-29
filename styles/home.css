@@ -159,7 +159,11 @@ h2 {
 }
 /*Video*/
 .video .title-2 {
+  opacity: 0;
   margin-top: 20px;
+}
+.video .ratio {
+  opacity: 0;
 }
 
 /*footer*/
