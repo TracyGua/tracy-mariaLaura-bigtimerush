@@ -85,7 +85,6 @@ h1 {
 /*Carousel*/
 .carousel .title-2 {
   margin-top: 20px;
-  opacity: 0%;
 }
 .swiper-slide img {
   width: 100%;
@@ -93,7 +92,6 @@ h1 {
 }
 
 .swiper {
-  opacity: 0%;
   aspect-ratio: 16 / 9;
   box-shadow: 0 0 7px 7px rgb(168, 52, 62, 0.4);
 }
@@ -108,7 +106,6 @@ h1 {
 /*Cartes*/
 .cartes .title-2 {
   margin-top: 20px;
-  opacity: 0;
 }
 
 .cartes {
@@ -159,11 +156,7 @@ h2 {
 }
 /*Video*/
 .video .title-2 {
-  opacity: 0;
   margin-top: 20px;
-}
-.video .ratio {
-  opacity: 0;
 }
 
 /*footer*/
