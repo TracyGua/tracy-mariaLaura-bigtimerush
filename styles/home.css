@@ -215,8 +215,33 @@ footer a:hover {
 
 .down .animation {
   background-image: url("../img/spritess/down_tr.png");
+  animation-name: down;
 }
+
+.up .animation {
+  background-image: url("../img/spritess/up_tr.png");
+  animation-name: up;
+}
+
 @keyframes idle {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -9600px;
+  }
+}
+
+@keyframes down {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -9600px;
+  }
+}
+
+@keyframes up {
   from {
     background-position: 0 0;
   }
