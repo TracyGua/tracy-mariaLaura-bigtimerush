@@ -115,13 +115,6 @@ h2 {
   font-family: var(--punch);
 }
 
-.card1,
-.card2,
-.card3,
-.card4 {
-  opacity: 0;
-}
-
 .card {
   box-shadow: 10px 10px 10px rgb(168, 52, 62, 0.4);
   width: 100%;
