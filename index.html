@@ -379,22 +379,7 @@ gsap.to(".video .ratio", {
 
 //animation spritesheet Tracy
 
-document.querySelector('.animation');
 
-gsap.to('.animation', {
-  scrollTrigger: {
-    trigger: '.animation',
-    start: '50% 75%',
-    end: '50% 25%',
-    markers: true,
-    scrub: 0.25,
-    onUpdate: (e) => {
-      no2.innerText = e.progress;
-    }
-  },
-  x: '100%',
-  duration: 2,
-});
 
     </script>
   </body>
