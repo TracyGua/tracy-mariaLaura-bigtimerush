@@ -378,7 +378,48 @@ gsap.to(".video .ratio", {
 })
 
 //animation spritesheet Tracy
+const animationSection = document.querySelector('.animation');
+const body = document.querySelector('body');
+let isScrolling;
 
+window.addEventListener('scroll', function() {
+	window.clearTimeout( isScrolling );
+  body.classList.add("is-scrolling");
+	isScrolling = setTimeout(function() {
+		console.log( 'Scrolling has stopped.' );
+    body.classList.remove("is-scrolling");
+	}, 250);
+});
+
+
+let anim = gsap.timeline({
+  scrollTrigger: {
+    trigger: '.level',
+    onUpdate: (e) => {
+      if(e.progress){
+         if(e.direction==-1){
+          body.classList.add("up");
+          body.classList.remove("down");
+        }else{
+          body.classList.add("down");
+          body.classList.remove("up");
+        }
+      }
+    }
+  
+  }
+});
+
+gsap.to(".video .ratio", {
+  scrollTrigger: {
+    start:'center 75%',
+    trigger: '.video .ratio',
+    toggleActions: 'restart  reverse reset' ,
+  },
+    duration:1,
+    opacity:'100%',
+    rotateY: 360,
+})
 
 
     </script>
