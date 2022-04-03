@@ -388,9 +388,10 @@ window.addEventListener('scroll', function() {
 	isScrolling = setTimeout(function() {
 		console.log( 'Scrolling has stopped.' );
     body.classList.remove("is-scrolling");
+    body.classList.remove("down");
+    body.classList.remove("up");
 	}, 250);
 });
-
 
 let anim = gsap.timeline({
   scrollTrigger: {
@@ -410,17 +411,20 @@ let anim = gsap.timeline({
   }
 });
 
-gsap.to(".video .ratio", {
-  scrollTrigger: {
-    start:'center 75%',
-    trigger: '.video .ratio',
-    toggleActions: 'restart  reverse reset' ,
-  },
-    duration:1,
-    opacity:'100%',
-    rotateY: 360,
+gsap.to('.animation', { 
+    y: '35%',
+    ease: 'none',
+    scrollTrigger: {
+      pin: true,
+      pinSpacing: false,
+      scrub: true,
+      markers: true,
+      start: 'top 0%',
+      end: 'bottom 75%',
+      trigger: '.barre',
+    }
 })
-
+    
 
     </script>
   </body>
