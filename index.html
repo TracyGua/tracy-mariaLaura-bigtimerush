@@ -386,7 +386,6 @@ window.addEventListener('scroll', function() {
 	window.clearTimeout( isScrolling );
   body.classList.add("is-scrolling");
 	isScrolling = setTimeout(function() {
-		console.log( 'Scrolling has stopped.' );
     body.classList.remove("is-scrolling");
     body.classList.remove("down");
     body.classList.remove("up");
@@ -395,7 +394,6 @@ window.addEventListener('scroll', function() {
 
 let anim = gsap.timeline({
   scrollTrigger: {
-    trigger: '.level',
     onUpdate: (e) => {
       if(e.progress){
          if(e.direction==-1){
