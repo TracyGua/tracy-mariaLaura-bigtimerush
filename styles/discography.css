@@ -124,7 +124,63 @@ main {
 }
 
 .animation {
-  width: 100%;
+  background-image: url("../img/spritess/idle_maria.png");
+  position: relative;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 400px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  animation-name: idle;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(48);
+}
+
+ .down .animation {
+  background-image: url("../img/spritess/scroll_down_maria.png");
+  animation-name: down;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(24);
+}   
+
+.up .animation {
+  background-image: url("../img/spritess/scroll_up_maria.png");
+  animation-name: up;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(48);
+} 
+
+
+@keyframes idle {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -19200px;
+  }
+}
+
+@keyframes down {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -9600px;
+  }
+}
+
+@keyframes up {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -19200px;
+  }
 }
 
 .btn {

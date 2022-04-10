@@ -87,8 +87,8 @@
     <div class="container" id="main">
       <div class="row">
         <!--barre lateral-->
-        <div class="col-md-3 d-none d-md-block">
-          <img class="animation" src=img/maLPGgu.png alt="L'image est innaccessible">
+        <div class="col-md-3 d-none d-md-block barrelateral">
+          <div class="animation"></div>
         </div>
         <section class="col-md-9 col-12 scroll">
 
@@ -311,6 +311,53 @@
         ease:"slow",
      
     })
+    gsap.registerPlugin(ScrollTrigger);
+    const animation1 = document.querySelector('.animation');
+const body = document.querySelector('body');
+let isScrolling;
+
+
+window.addEventListener('scroll', function() {
+	window.clearTimeout( isScrolling );
+  body.classList.add("is-scrolling");
+	isScrolling = setTimeout(function() {
+    body.classList.remove("is-scrolling");
+    body.classList.remove("down");
+    body.classList.remove("up");
+	}, 250);
+});
+
+let anim = gsap.timeline({
+  scrollTrigger: {
+    onUpdate: (e) => {
+      
+      if(e.progress){
+         if(e.direction==-1){
+          body.classList.add("up");
+          body.classList.remove("down");
+        }else{
+          body.classList.add("down");
+          body.classList.remove("up");
+        }
+      }
+    }
+  
+  }
+});
+gsap.to('.animation', { 
+    y: '80%',
+    ease: 'none',
+    scrollTrigger: {
+      pin: true,
+      pinSpacing: false,
+      scrub: true,
+      start: 'top 0%',
+      end: 'bottom 75%',
+      trigger: '.barrelateral',
+    }
+})
+
+
   </script>
 
   <div class="modal fade" id="Maria" tabindex="-1">
