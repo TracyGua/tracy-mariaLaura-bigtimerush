@@ -139,13 +139,13 @@ main {
   animation-timing-function: steps(48);
 }
 
- .down .animation {
+.down .animation {
   background-image: url("../img/spritess/scroll_down_maria.png");
   animation-name: down;
   animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-timing-function: steps(24);
-}   
+}
 
 .up .animation {
   background-image: url("../img/spritess/scroll_up_maria.png");
@@ -153,8 +153,7 @@ main {
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: steps(48);
-} 
-
+}
 
 @keyframes idle {
   from {
@@ -183,6 +182,67 @@ main {
   }
 }
 
+/*anim antoine*/
+.animation2 {
+  background-image: url("../img/spritess/idle_maria.png");
+  position: relative;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 400px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  animation-name: idle2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(48);
+}
+
+.down2 .animation2 {
+  background-image: url("../img/spritess/scroll_down_maria.png");
+  animation-name: down2;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(24);
+}
+
+.up2 .animation2 {
+  background-image: url("../img/spritess/scroll_up_maria.png");
+  animation-name: up2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(48);
+}
+
+@keyframes idle2 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -19200px;
+  }
+}
+
+@keyframes down2 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -9600px;
+  }
+}
+
+@keyframes up2 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -19200px;
+  }
+}
+
+/**/
 .btn {
   scroll-behavior: smooth;
 }
