@@ -90,8 +90,9 @@
     <div class="container" id="main">
       <div class="row">
         <!--barre lateral-->
-        <div class="col-md-3 d-none d-md-block">
-          <div class="animation2"></div>
+        <div class="col-md-3 d-none d-md-block barrelateral">
+          <div class="animation2">
+          </div>
         </div>
         <section class="col-md-9 col-12 scroll">
 
@@ -317,6 +318,50 @@
 
     //animation spritesheet Antoine
 
+    gsap.registerPlugin(ScrollTrigger);
+const body = document.querySelector('body');
+let isScrolling;
+
+
+window.addEventListener('scroll', function() {
+	window.clearTimeout( isScrolling );
+  body.classList.add("is-scrolling");
+	isScrolling = setTimeout(function() {
+    body.classList.remove("is-scrolling");
+    body.classList.remove("down2");
+    body.classList.remove("up2");
+	}, 250);
+});
+
+let anim = gsap.timeline({
+  scrollTrigger: {
+    onUpdate: (e) => {
+      
+      if(e.progress){
+         if(e.direction==-1){
+          body.classList.add("up2");
+          body.classList.remove("down2");
+        }else{
+          body.classList.add("down2");
+          body.classList.remove("up2");
+        }
+      }
+    }
+  
+  }
+});
+gsap.to('.animation2', { 
+    y: '80%',
+    ease: 'none',
+    scrollTrigger: {
+      pin: true,
+      pinSpacing: false,
+      scrub: true,
+      start: 'top 0%',
+      end: 'bottom 75%',
+      trigger: '.barrelateral',
+    }
+})
 
   </script>
 

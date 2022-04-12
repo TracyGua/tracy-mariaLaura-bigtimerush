@@ -123,6 +123,10 @@ main {
   font-family: var(--regulier);
 }
 
+.barrelateral {
+  display: none;
+}
+
 .animation {
   background-image: url("../img/spritess/idle_maria.png");
   position: relative;
@@ -184,7 +188,7 @@ main {
 
 /*anim antoine*/
 .animation2 {
-  background-image: url("../img/spritess/idle_maria.png");
+  background-image: url("../img/spritess/idle-ant.png");
   position: relative;
   bottom: 0;
   left: 50%;
@@ -200,7 +204,7 @@ main {
 }
 
 .down2 .animation2 {
-  background-image: url("../img/spritess/scroll_down_maria.png");
+  background-image: url("../img/spritess/down-ant.png");
   animation-name: down2;
   animation-duration: 1s;
   animation-iteration-count: infinite;
@@ -208,7 +212,7 @@ main {
 }
 
 .up2 .animation2 {
-  background-image: url("../img/spritess/scroll_up_maria.png");
+  background-image: url("../img/spritess/up-ant.png");
   animation-name: up2;
   animation-duration: 2s;
   animation-iteration-count: infinite;
