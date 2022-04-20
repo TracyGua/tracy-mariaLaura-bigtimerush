@@ -1,0 +1,351 @@
+body {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+}
+.heros {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+@media screen and (orientation: landscape) {
+  .heros {
+    height: 56.25vw;
+    width: 100%;
+  }
+}
+/* picture{
+    width: 100%;
+    height:100%;
+} */
+
+.mySwiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide .img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+.btr {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: contain;
+}
+.contraste {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgb(168, 52, 62, 0.3)
+  );
+}
+
+.heros .container-fluid {
+  top: 60%;
+  position: absolute;
+  z-index: 3;
+  top: 60%;
+}
+h1 {
+  color: var(--blanc);
+  font-size: 50px;
+  font-family: var(--punch);
+}
+.heros .row {
+  height: 100%;
+}
+.btn {
+  color: var(--noir);
+  background-color: var(--rouge-pale);
+  border-radius: 20px 20px 20px 20px;
+  font-weight: bold;
+  border: none;
+  width: 200px;
+  font-family: var(--regulier);
+}
+.btn:hover {
+  background-color: var(--rouge-fonce);
+}
+
+.navbar {
+  background-color: var(--rouge-pale);
+  width: 100vw;
+  opacity: 0.9;
+}
+.text-lg-start {
+  color: var(--blanc);
+  font-weight: bold;
+  font-family: var(--regulier);
+}
+
+.nav-link {
+  font-weight: bold;
+}
+.nav-link {
+  font-weight: bold;
+}
+.logo {
+  width: 10%;
+}
+
+footer {
+  background: var(--rouge-pale);
+  padding: 20px;
+  margin: 20px 0;
+  margin-bottom: 0;
+  font-size: 20px;
+  font-family: var(--regulier);
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer a:hover {
+  color: var(--noir);
+}
+p {
+  text-align: center;
+}
+
+main {
+  margin-top: 60px;
+  font-family: var(--regulier);
+}
+
+.barrelateral {
+  display: none;
+}
+
+.animation {
+  background-image: url("../img/spritess/idle_maria.png");
+  position: relative;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 400px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  animation-name: idle;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(48);
+}
+
+.down .animation {
+  background-image: url("../img/spritess/scroll_down_maria.png");
+  animation-name: down;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(24);
+}
+
+.up .animation {
+  background-image: url("../img/spritess/scroll_up_maria.png");
+  animation-name: up;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(48);
+}
+
+@keyframes idle {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -19200px;
+  }
+}
+
+@keyframes down {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -9600px;
+  }
+}
+
+@keyframes up {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -19200px;
+  }
+}
+
+/*anim antoine*/
+.animation2 {
+  background-image: url("../img/spritess/idle-ant.png");
+  position: relative;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 400px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  animation-name: idle2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(48);
+}
+
+.down2 .animation2 {
+  background-image: url("../img/spritess/down-ant.png");
+  animation-name: down2;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(24);
+}
+
+.up2 .animation2 {
+  background-image: url("../img/spritess/up-ant.png");
+  animation-name: up2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(48);
+}
+
+@keyframes idle2 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -19200px;
+  }
+}
+
+@keyframes down2 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -9600px;
+  }
+}
+
+@keyframes up2 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -19200px;
+  }
+}
+
+/**/
+.btn {
+  scroll-behavior: smooth;
+}
+
+.img-fluid .img1 {
+  max-width: 100%;
+  height: auto;
+}
+.img-fluid .img2 {
+  max-width: 100%;
+  height: auto;
+}
+.img-fluid .img3 {
+  max-width: 100%;
+  height: auto;
+}
+
+.premieralbum {
+  padding-left: 20px;
+  padding-bottom: 20px;
+  margin-top: 40px;
+  background-color: white;
+  color: var(--rouge-fonce);
+  font-weight: bold;
+  box-shadow: 0 0 5px 5px rgb(168, 52, 62, 0.4);
+}
+
+.deuxalbum {
+  padding-right: 20px;
+  padding-bottom: 20px;
+  margin-top: 40px;
+  background-color: white;
+  color: var(--rouge-fonce);
+  font-weight: bold;
+  box-shadow: 0 0 5px 5px rgb(168, 52, 62, 0.4);
+}
+
+.troisalbum {
+  padding-right: 20px;
+  padding-bottom: 20px;
+  margin-top: 40px;
+  background-color: white;
+  color: var(--rouge-fonce);
+  font-weight: bold;
+  box-shadow: 0 0 5px 5px rgb(168, 52, 62, 0.4);
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: var(--punch);
+}
+.video {
+  margin-top: 30px;
+}
+.ratio {
+  aspect-ratio: 16/9;
+}
+
+.album a {
+  text-decoration: none;
+  color: var(--noir);
+}
+.album {
+  color: var(--noir);
+  background-color: var(--rouge-pale2);
+  border-radius: 20px 20px 20px 20px;
+  font-weight: bold;
+  border: none;
+  width: 200px;
+  font-family: var(--regulier);
+}
+.album:hover {
+  background-color: var(--blue-fonce);
+}
+
+.album:hover {
+  background-color: var(--rouge-pale);
+}
+.album:link {
+  background-color: var(--rouge-pale);
+}
+.modal-title {
+  color: var(--rouge-pale);
+}
+
+.survole:hover {
+  color: var(--noir);
+  cursor: pointer;
+}
+.modal1 {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.modal .modal-content {
+  background-color: var(--rouge-fonce);
+}
+.modal .modal-content {
+  background: linear-gradient(var(--blanc), var(--rouge-pale));
+}

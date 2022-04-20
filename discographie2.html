@@ -74,10 +74,10 @@
               <a href="index.html" class="nav-link">Accueil</a>
             </li>
             <li class="nav-item">
-              <a href="discographie.html" class="nav-link active">Discographie</a>
+              <a href="discographie.html" class="nav-link">Discographie</a>
             </li>
             <li class="nav-item">
-              <a href="discographie2.html" class="nav-link">Discographie2</a>
+              <a href="discographie2.html" class="nav-link active">Discographie2</a>
             </li>
           </ul>
         </div>
@@ -91,7 +91,8 @@
       <div class="row">
         <!--barre lateral-->
         <div class="col-md-3 d-none d-md-block barrelateral">
-          <div class="animation"></div>
+          <div class="animation2">
+          </div>
         </div>
         <section class="col-md-9 col-12 scroll">
 
@@ -314,9 +315,10 @@
         ease:"slow",
      
     })
-    //Maria Laura sprite sheet
+
+    //animation spritesheet Antoine
+
     gsap.registerPlugin(ScrollTrigger);
-    const animation1 = document.querySelector('.animation');
 const body = document.querySelector('body');
 let isScrolling;
 
@@ -326,8 +328,8 @@ window.addEventListener('scroll', function() {
   body.classList.add("is-scrolling");
 	isScrolling = setTimeout(function() {
     body.classList.remove("is-scrolling");
-    body.classList.remove("down");
-    body.classList.remove("up");
+    body.classList.remove("down2");
+    body.classList.remove("up2");
 	}, 250);
 });
 
@@ -337,18 +339,18 @@ let anim = gsap.timeline({
       
       if(e.progress){
          if(e.direction==-1){
-          body.classList.add("up");
-          body.classList.remove("down");
+          body.classList.add("up2");
+          body.classList.remove("down2");
         }else{
-          body.classList.add("down");
-          body.classList.remove("up");
+          body.classList.add("down2");
+          body.classList.remove("up2");
         }
       }
     }
   
   }
 });
-gsap.to('.animation', { 
+gsap.to('.animation2', { 
     y: '100%',
     ease: 'none',
     scrollTrigger: {
@@ -360,7 +362,6 @@ gsap.to('.animation', {
       trigger: '.barrelateral',
     }
 })
-
 
   </script>
 

@@ -20,31 +20,412 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-      crossorigin="anonymous"
-    ></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Big Time Rush</title>
 
     <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/home.css" />
     <script src="scripts/main.js"></script>
+  
   </head>
   <body>
-    Je suis la.
+  
+    <!--Hero-->
+      <section class="hero">
+        <picture class="picture-hero">
+          <source srcset="img/btr_landscape.jpg" media="(orientation: landscape)"/>
+          <img src="img/btr_portrait.jpg" class="img_btr img-fluid" alt="L'image est innaccessible"/>
+        </picture>
+
+        <div class="contrast-div"></div>
+
+        <div class="container-fluid">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-12 col-md-6 col-xl-3">
+              <h1>Big Time Rush</h1>
+              <p> Big Time Rush (également connu sous le nom de BTR) est 
+                un groupe de musique américain formé en 2009 à Los Angeles, 
+                en Californie, et composé de Kendall Schmidt, 
+                James Maslow, Carlos Pena, Jr. et de Logan Henderson.</p>
+                <a href="#main">
+                <button class="savoir-plus" type="button">En savoir plus</button>
+              </a>
+              </div> 
+        </div>
+      </section>
+
+    <!--Navbar-->
+      <nav class="navbar navbar-dark navbar-expand-sm sticky-top">
+        <div class="container">
+          <div class="col-sm-12">
+            
+            <a class="navbar-brand" href="index.html">
+              <img src="img/logo_btr.png" alt="L'image est innaccessible" class="logo">
+            </a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Affichage/masquage de la navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+           
+          <div id="mainNav" class="collapse navbar-collapse">
+            
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link active">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a href="discographie.html" class="nav-link">Discographie</a>
+              </li>
+              <li class="nav-item">
+                <a href="discographie2.html" class="nav-link">Discographie2</a>
+              </li>
+             </ul>
+          </div>
+        </div>
+      </div>
+      </nav>
+
+      <!--Main-->
+    <div class="container" id="main">
+    <div class="row justify-content-center">
+
+    <main class="col-md-9">
+
+        <!--Carousel-->
+   <section class="carousel">
+    <p class="title-2">Images promotionnelles</p>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide no1"><img src="img/slider/promo1.jpg" alt="L'image est innaccessible"></div>
+        <div class="swiper-slide no3"><img src="img/slider/promo2.jpg" alt="L'image est innaccessible"></div>
+        <div class="swiper-slide no3"><img src="img/slider/promo3.jpg" alt="L'image est innaccessible">    </div>
+        <div class="swiper-slide no4"><img src="img/slider/promo4.jpg" alt="L'image est innaccessible"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+      <!--Cartes-->
+        <section class="container cartes">
+          <div class="row">
+          <p class="title-2">Membres du groupe</p>
+          </div>
+
+      <div class="row ">
+
+      <div class="col-sm-6 ">
+        <div class="card card1">
+          <img src="img/james.jpg" alt="L'image est innaccessible" class="membre 1">
+          <div class="card-body">
+            <h3 class="card-title">James Maslow</h3>
+            James David Maslow est un acteur et chanteur américain.  
+          </div>
+          <div class="card-footer">
+            <a class="button-savoir" href="https://en.wikipedia.org/wiki/James_Maslow">En savoir plus</a>
+          </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 ">
+          <div class="card card2">
+            <img src="img/kendall.jpg" alt="L'image est innaccessible" class="membre 1">
+            <div class="card-body">
+              <h3 class="card-title">Kendall Schmidt</h3>
+              Kendall Francis Schmidt est un chanteur, auteur-compositeur, producteur 
+              de musique et acteur américain. 
+            </div>
+            <div class="card-footer">
+              <a class="button-savoir" href="https://en.wikipedia.org/wiki/Kendall_Schmidt">En savoir plus</a>
+            </div>
+            </div>
+          </div>
+
+        <div class="col-sm-6 ">
+          <div class="card card3">
+            <img src="img/carlos.jpg" alt="L'image est innaccessible" class="membre 1">
+            <div class="card-body">
+              <h3 class="card-title">Carlos Pena Vega</h3>
+              Carlos Roberto PenaVega est un acteur et chanteur américain.
+            </div>
+              <div class="card-footer">
+              <a class="button-savoir" href="https://en.wikipedia.org/wiki/Carlos_PenaVega">En savoir plus</a>
+              </div>
+          </div>
+        </div>
+
+      <div class="col-sm-6 ">
+        <div class="card card4">
+          <img src="img/logan.jpg" alt="L'image est innaccessible" class="membre 1">
+          <div class="card-body">
+            <h3 class="card-title">Logan Phillip Henderson</h3>
+            Logan Phillip Henderson
+             est un acteur et chanteur américain.
+          </div>
+            <div class="card-footer">
+            <a class="button-savoir" href="https://en.wikipedia.org/wiki/Logan_Henderson">En savoir plus</a>
+            </div>
+        </div>
+      
+     
+      </div>   
+
+        </div> 
+        </section>
+
+        <!--VIDEO-->
+        <section class="video">
+          <div class="title-2">Vidéo</div>
+          <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/OLr33BKumVE"></iframe>
+        </div>
+        </section>
+      </main>
+
+      <!--barre laterale(partie droit du main)-->
+    <div class="col-md-3 d-md-block barre">
+
+        <div class="animation">
+        </div>
+
+    </div>
+
+      </div>
+
+    </div>
+
+      <!--Footer-->
+      <footer>
+        <div class="container">
+          
+          <div class="row justify-content-center">
+            <div class="col-sm-6 text-center justify-content-start">
+              <div class="d-lg-flex justify-content-start nom1" data-bs-toggle="modal" data-bs-target="#tracy">Tracy Gua</div>
+              <div class="d-lg-flex justify-content-start nom2" data-bs-toggle="modal" data-bs-target="#marialaura">Maria-Laura Coronel</div>
+          </div>
+
+          <div class="col-sm-6 text-center">
+              <a class="d-lg-flex justify-content-end" href="https://github.com/TracyGua/tracy-mariaLaura-bigtimerush.git">https://github.com/TracyGua/tracy-mariaLaura-bigtimerush.git</a>
+              <div class="d-lg-flex justify-content-end">©2022</div>
+         </div>
+        </div>
+        </div>
+         <!--Modals-->
+        <div class="modal fade" id="tracy" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2 class="modal-title">Tracy Gua</h2>
+                <button class="btn-close" data-bs-dismiss="modal" aria-label="Fermer la fenêtre"></button>
+              </div>
+              <div class="modal-body">
+                <img src="img/tracy.png" class="tracy" alt="L'image est innaccessible">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="marialaura" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2 class="modal-title">Maria Laura Coronel</h2>
+                <button class="btn-close" data-bs-dismiss="modal" aria-label="Fermer la fenêtre"></button>
+              </div>
+              <div class="modal-body">
+                <img src="img/mariaLaura.png" class="mariaLaura" alt="L'image est innaccessible">
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+      <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper", {
+        direction:'horizontal',
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        }
+      );
+
+      gsap.registerPlugin(ScrollTrigger);
+
+      gsap.timeline({
+
+})
+gsap.to(".carousel", {
+  scrollTrigger: {
+    start:'center 75%',
+    trigger: '.carousel',
+    toggleActions: 'restart  reverse reset' ,
+  },
+    duration:1,
+    opacity:'100%',
+})
+
+gsap.to(".carousel .title-2", {
+  scrollTrigger: {
+    start:'center 75%',
+    trigger: '.carousel .title-2',
+    toggleActions: 'restart  reverse reset' ,
+  },
+    duration:1,
+    rotateX: 360,
+}, '<')
+
+gsap.to(".swiper", {
+  scrollTrigger: {
+    start:'center 75%',
+    trigger: '.swiper',
+    toggleActions: 'restart  reverse reset' ,
+  },
+    duration:1,
+    rotateY: 360,
+}, '<')
+
+gsap.to(".cartes .title-2",{
+  scrollTrigger: {
+    start:'center 75%',
+    trigger: '.cartes .title-2',
+    toggleActions: 'restart  reverse reset' ,
+  },
+    duration:1,
+    rotateX: 360,
+    opacity:'100%',
+})
+
+gsap.to(".card1",{
+  scrollTrigger: {
+    start:'center 75%',
+    trigger: '.card1',
+    toggleActions: 'restart  reverse reset' ,
+  },
+    duration:1,
+    rotateX: 360,
+    opacity:'100%',
+    ease: 'back',
+    
+})
+
+gsap.to(".card2",{
+  scrollTrigger: {
+    start:'center 75%',
+    trigger: '.card2',
+    toggleActions: 'restart  reverse reset' ,
+  },
+    duration:1,
+    rotateX: 360,
+    opacity:'100%',
+    ease: 'back'
+})
+
+gsap.to(".card3",{
+  scrollTrigger: {
+    start:'center 75%',
+    trigger: '.card3',
+    toggleActions: 'restart  reverse reset' ,
+  },
+    duration:1,
+    rotateX: 360,
+    opacity:'100%',
+    ease: 'back'
+})
+
+gsap.to(".card4",{
+  scrollTrigger: {
+    start:'center 75%',
+    trigger: '.card4',
+    toggleActions: 'restart  reverse reset' ,
+  },
+    duration:1,
+    rotateX: 360,
+    opacity:'100%',
+    ease: 'back'
+})
+
+gsap.to(".video .title-2", {
+  scrollTrigger: {
+    start:'center 75%',
+    trigger: '.video .title-2',
+    toggleActions: 'restart  reverse reset' ,
+  },
+    duration:1,
+    opacity:'100%',
+    rotateX: 360,
+})
+
+gsap.to(".video .ratio", {
+  scrollTrigger: {
+    start:'center 75%',
+    trigger: '.video .ratio',
+    toggleActions: 'restart  reverse reset' ,
+  },
+    duration:1,
+    opacity:'100%',
+    rotateY: 360,
+})
+
+//animation spritesheet Tracy
+const animationSection = document.querySelector('.animation');
+const body = document.querySelector('body');
+let isScrolling;
+
+window.addEventListener('scroll', function() {
+	window.clearTimeout( isScrolling );
+  body.classList.add("is-scrolling");
+	isScrolling = setTimeout(function() {
+    body.classList.remove("is-scrolling");
+    body.classList.remove("down");
+    body.classList.remove("up");
+	}, 250);
+});
+
+let anim = gsap.timeline({
+  scrollTrigger: {
+    onUpdate: (e) => {
+      if(e.progress){
+         if(e.direction==-1){
+          body.classList.add("up");
+          body.classList.remove("down");
+        }else{
+          body.classList.add("down");
+          body.classList.remove("up");
+        }
+      }
+    }
+  
+  }
+});
+
+gsap.to('.animation', { 
+    y: '100%',
+    ease: 'none',
+    scrollTrigger: {
+      pin: true,
+      pinSpacing: false,
+      scrub: true,
+      start: 'top 0%',
+      end: 'bottom 75%',
+      trigger: '.barre',
+    }
+})
+  
+
+    </script>
   </body>
 </html>
