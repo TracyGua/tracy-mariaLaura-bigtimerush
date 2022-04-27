@@ -169,9 +169,24 @@
               </div>
             </div>
           </section>
+          <section>
+           
+            <h2>Des paroles qui inspirent</h2>
+            <form>
+              <input type="text" id="chanson" name="chanson" placeholder="Titre d'une chanson"><br><br>
+            <input type="submit" class="submit" value="Rechercher">
+             <!-- Music sounds better with you -->
+            <!-- Cover girl -->
+            </form>
+            <div class="paroles">
+            </div>
+            </section>
         </section>
       </div>
     </div>
+
+
+
   </main>
   <!--Pied de page-->
   <footer>
@@ -390,7 +405,24 @@ gsap.to('.animation', {
     }
 })
 
-
+let chanson = document.querySelector("#chanson");
+let paroless = document.querySelector('.paroles');
+let rechercher  = document.querySelector('.submit');
+ rechercher.addEventListener('click',function(){
+event.preventDefault();
+if(chanson.value != ""){
+  fetch (`https://api.lyrics.ovh/v1/big time rush/${chanson.value}`)
+  .then(data => data.json())
+  .then(paroles => {
+    paroless.innerText = paroles.lyrics;
+    const newLineToBr = function(str) {
+    return str.replace(/(?:\r\n|\r|\n)/g, '<br>');
+    };
+  }) ;
+} else {
+  reject("Désolé, les paroles n'ont pu être trouvées. En voici la raison:");
+};
+})
   </script>
 
 
