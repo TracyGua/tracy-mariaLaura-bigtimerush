@@ -444,7 +444,7 @@ let chanson = document.querySelector('#song');
 let divChanson = document.querySelector('.paroles');
 let submit =  document.querySelector('.submit');
 submit.addEventListener('click', function() {
-
+  
   event.preventDefault();
   if(chanson.value != ''){
   fetch(`https://api.lyrics.ovh/v1/big time rush/${chanson.value}`) 
