@@ -250,3 +250,11 @@ footer a:hover {
   }
 }
 
+/*Paroles*/
+.noSpin .spin {
+  display: none;
+}
+
+.yesSpin .spin {
+  display: block;
+}
