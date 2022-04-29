@@ -184,12 +184,13 @@
 
         <!--PAROLES-->
         <section class="section-paroles">
-          <div class="title-2">Paroles</div>
+          <div class="title-2">Des paroles qui inspirent</div>
           <form>
             <label for="titre-song">Titre d'une chanson</label><br>
             <input type="text" id="song" name="song"><br><br>
             <input type="submit" class="submit" value="Rechercher">
           </form>
+          <!--Chansons: Boyfriend, Worldwide-->
          <div class="paroles">
          </div>
         </section>
@@ -453,12 +454,12 @@ submit.addEventListener('click', function() {
     divChanson.innerText = paroles.lyrics;
     const newLineToBr = function(lyrics) {
     return lyrics.replace(/(?:\r\n|\r|\n)/g, '<br>');
+}
+}); 
+}else{
+  divChanson.innerText = "Désolé, les paroles n'ont pu être trouvées";
 };
-    
-  }); 
- 
-};
-})
+});
 
 
 
