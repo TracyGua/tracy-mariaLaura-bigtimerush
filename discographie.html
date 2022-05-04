@@ -178,6 +178,10 @@
              <!-- Music sounds better with you -->
             <!-- Cover girl -->
             </form>
+            <br>
+            <div class="spinner-border" id="spinner" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
             <div class="paroles">
             </div>
             </section>
@@ -408,21 +412,28 @@ gsap.to('.animation', {
 let chanson = document.querySelector("#chanson");
 let paroless = document.querySelector('.paroles');
 let rechercher  = document.querySelector('.submit');
- rechercher.addEventListener('click',function(){
+let spinner  = document.querySelector('#spinner').style.display = "none";
+
+
+function hideSpinner(){
+  document.getElementById('spinner').style.display = 'block';
+};
+
+rechercher.addEventListener('click',function(){
 event.preventDefault();
 if(chanson.value != ""){
   fetch (`https://api.lyrics.ovh/v1/big time rush/${chanson.value}`)
   .then(data => data.json())
   .then(paroles => {
+    hideSpinner();
     paroless.innerText = paroles.lyrics;
     const newLineToBr = function(str) {
-    return str.replace(/(?:\r\n|\r|\n)/g, '<br>');
-    };
-  }) ;
-} else {
-  reject("Désolé, les paroles n'ont pu être trouvées. En voici la raison:");
+    return str.replace(/(?:\r\n|\r|\n)/g, '<br>'); 
+    }
+  }) 
+.catch(error => paroless.innerText = `Désolé, les paroles n'ont pu être trouvées. En voici la raison: ${error}`)
 };
-})
+});
   </script>
 
 
