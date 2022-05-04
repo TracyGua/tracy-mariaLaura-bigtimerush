@@ -179,7 +179,7 @@
             <!-- Cover girl -->
             </form>
             <br>
-            <div class="spinner-border" id="spinner" role="status">
+            <div class="spinner-border load" role="status">
               <span class="visually-hidden">Loading...</span>
             </div>
             <div class="paroles">
@@ -412,26 +412,27 @@ gsap.to('.animation', {
 let chanson = document.querySelector("#chanson");
 let paroless = document.querySelector('.paroles');
 let rechercher  = document.querySelector('.submit');
-let spinner  = document.querySelector('#spinner').style.display = "none";
+let spinner  = document.querySelector('.load');
 
-
-function hideSpinner(){
-  document.getElementById('spinner').style.display = 'block';
-};
-
+body.classList.add('loadfalse')
 rechercher.addEventListener('click',function(){
 event.preventDefault();
 if(chanson.value != ""){
   fetch (`https://api.lyrics.ovh/v1/big time rush/${chanson.value}`)
+  .then(body.classList.remove('loadfalse'))
+  .then(body.classList.add('loadspinner'))
   .then(data => data.json())
   .then(paroles => {
-    hideSpinner();
     paroless.innerText = paroles.lyrics;
     const newLineToBr = function(str) {
     return str.replace(/(?:\r\n|\r|\n)/g, '<br>'); 
     }
   }) 
 .catch(error => paroless.innerText = `Désolé, les paroles n'ont pu être trouvées. En voici la raison: ${error}`)
+.finally(function(){
+  body.classList.add('loadfalse')
+  body.classList.remove('loadspinner')
+})
 };
 });
   </script>
