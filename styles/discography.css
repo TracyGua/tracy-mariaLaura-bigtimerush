@@ -333,11 +333,12 @@ h2 {
   color: var(--rouge-pale);
 }
 
-.survole:hover {
+/* .survole:hover {
   color: var(--noir);
   cursor: pointer;
-}
-.modal1 {
+} */
+.modalmaria,
+.modaltracy {
   width: 300px;
   margin-left: auto;
   margin-right: auto;
@@ -348,4 +349,12 @@ h2 {
 }
 .modal .modal-content {
   background: linear-gradient(var(--blanc), var(--rouge-pale));
+}
+.nom1:hover{
+  color:  var(--noir);
+  cursor: pointer;
+}
+.nom2:hover{
+  color:  var(--noir);
+  cursor: pointer;
 }
