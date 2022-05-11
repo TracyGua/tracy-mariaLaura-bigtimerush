@@ -169,9 +169,28 @@
               </div>
             </div>
           </section>
+          <section>
+           
+            <div class="title-2">Des paroles qui inspirent</div>
+            <form>
+              <input type="text" id="chanson" name="chanson" placeholder="Titre d'une chanson"><br><br>
+            <input type="submit" class="submit" value="Rechercher">
+             <!-- Music sounds better with you -->
+            <!-- Cover girl -->
+            </form>
+            <br>
+            <div class="spinner-border load" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="paroles">
+            </div>
+            </section>
         </section>
       </div>
     </div>
+
+
+
   </main>
   <!--Pied de page-->
   <footer>
@@ -376,7 +395,34 @@ gsap.to('.animation', {
     }
 })
 
+let chanson = document.querySelector("#chanson");
+let paroless = document.querySelector('.paroles');
+let rechercher  = document.querySelector('.submit');
+let spinner  = document.querySelector('.load');
 
+body.classList.add('loadfalse')
+rechercher.addEventListener('click',function(){
+event.preventDefault();
+if(chanson.value != ""){
+  fetch (`https://api.lyrics.ovh/v1/big time rush/${chanson.value}`)
+  .then(body.classList.remove('loadfalse'))
+  .then(body.classList.add('loadspinner'))
+  .then(data => data.json())
+  .then(paroles => {
+    paroless.innerText = paroles.lyrics;
+    const newLineToBr = function(str) {
+    return str.replace(/(?:\r\n|\r|\n)/g, '<br>'); 
+    }
+  }) 
+.catch(error => paroless.innerText = `Désolé, les paroles n'ont pu être trouvées. En voici la raison: ${error}`)
+.finally(function(){
+  body.classList.add('loadfalse')
+  body.classList.remove('loadspinner')
+})
+} else{
+  paroless.innerText = "Désolé, les paroles n'ont pu être trouvées";
+};
+});
   </script>
 
 

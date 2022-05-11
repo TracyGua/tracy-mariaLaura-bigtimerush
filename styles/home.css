@@ -249,3 +249,12 @@ footer a:hover {
     background-position: 0 -9600px;
   }
 }
+
+/*Paroles*/
+.noSpin .spin {
+  display: none;
+}
+
+.yesSpin .spin {
+  display: block;
+}
